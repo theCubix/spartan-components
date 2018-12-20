@@ -4,6 +4,7 @@ body {
 
 sc-app {
   background-color: $background;
+  display: block;
   font-family: $font-stack;
   font-size: $text-base-size;
   
