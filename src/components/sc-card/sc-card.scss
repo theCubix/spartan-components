@@ -1,0 +1,23 @@
+sc-card {
+  background-color: $foreground;
+  box-shadow: $shadow-strong;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $brand-primary;
+  }
+
+  .content {
+    box-sizing: border-box;
+    padding: $card-padding;
+  }
+}

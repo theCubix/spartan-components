@@ -1,0 +1,11 @@
+sc-section {
+  &.is-fullheight {
+    height: 100vh;
+  }
+
+  &.has-centered {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
