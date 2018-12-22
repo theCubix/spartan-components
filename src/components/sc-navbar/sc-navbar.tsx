@@ -26,7 +26,7 @@ export class ScNavbar {
 
   render() {
     return(
-      <header class="is-fixed">
+      <header>
         <h1 class="title">{this.name}</h1>
         <img class="menu-icon" src="assets/icon-menu.svg" onClick={() => this.toggle()} />
         <div class="list">

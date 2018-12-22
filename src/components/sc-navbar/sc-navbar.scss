@@ -1,12 +1,12 @@
 sc-navbar {
+  z-index: 777;
+  background-color: $foreground;
+  box-shadow: $shadow;
   header {
-    background-color: $foreground;
-    box-shadow: $shadow;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    z-index: 777;
   }
 
   .title {
@@ -54,7 +54,7 @@ sc-navbar {
 
   }
 
-  .is-fixed {
+  &.is-fixed {
     position: fixed;
     top: 0;
     width: 100%;
