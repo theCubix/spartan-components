@@ -6,10 +6,12 @@ export const config: Config = {
   srcDir: 'src',
   bundles: [
     { components: ['sc-app'] },
+    { components: ['sc-backdrop'] },
     { components: ['sc-card'] },
     { components: ['sc-container'] },
     { components: ['sc-grid'] },
     { components: ['sc-list'] },
+    { components: ['sc-navbar'] },
     { components: ['sc-section'] },
   ],
   plugins: [
