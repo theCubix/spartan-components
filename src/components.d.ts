@@ -7,7 +7,8 @@
 
 import '@stencil/core';
 
-
+import '@stencil/router';
+import '@stencil/state-tunnel';
 
 
 export namespace Components {
@@ -20,9 +21,13 @@ export namespace Components {
 
   interface ScCard {
     'heading': string;
+    'imageAlt': string;
+    'imageSrc': string;
   }
   interface ScCardAttributes extends StencilHTMLAttributes {
     'heading'?: string;
+    'imageAlt'?: string;
+    'imageSrc'?: string;
   }
 
   interface ScContainer {}
@@ -42,6 +47,9 @@ export namespace Components {
     'name'?: string;
   }
 
+  interface ScHome {}
+  interface ScHomeAttributes extends StencilHTMLAttributes {}
+
   interface ScSection {}
   interface ScSectionAttributes extends StencilHTMLAttributes {}
 }
@@ -55,6 +63,7 @@ declare global {
     'ScGrid': Components.ScGrid;
     'ScList': Components.ScList;
     'ScNavbar': Components.ScNavbar;
+    'ScHome': Components.ScHome;
     'ScSection': Components.ScSection;
   }
 
@@ -66,6 +75,7 @@ declare global {
     'sc-grid': Components.ScGridAttributes;
     'sc-list': Components.ScListAttributes;
     'sc-navbar': Components.ScNavbarAttributes;
+    'sc-home': Components.ScHomeAttributes;
     'sc-section': Components.ScSectionAttributes;
   }
 
@@ -112,6 +122,12 @@ declare global {
     new (): HTMLScNavbarElement;
   };
 
+  interface HTMLScHomeElement extends Components.ScHome, HTMLStencilElement {}
+  var HTMLScHomeElement: {
+    prototype: HTMLScHomeElement;
+    new (): HTMLScHomeElement;
+  };
+
   interface HTMLScSectionElement extends Components.ScSection, HTMLStencilElement {}
   var HTMLScSectionElement: {
     prototype: HTMLScSectionElement;
@@ -126,6 +142,7 @@ declare global {
     'sc-grid': HTMLScGridElement
     'sc-list': HTMLScListElement
     'sc-navbar': HTMLScNavbarElement
+    'sc-home': HTMLScHomeElement
     'sc-section': HTMLScSectionElement
   }
 
@@ -137,6 +154,7 @@ declare global {
     'sc-grid': HTMLScGridElement;
     'sc-list': HTMLScListElement;
     'sc-navbar': HTMLScNavbarElement;
+    'sc-home': HTMLScHomeElement;
     'sc-section': HTMLScSectionElement;
   }
 

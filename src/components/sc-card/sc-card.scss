@@ -1,8 +1,10 @@
 sc-card {
   background-color: $foreground;
+  border-radius: $corner-radius;
   box-shadow: $shadow-strong;
   box-sizing: border-box;
   display: block;
+  overflow: hidden;
   position: relative;
 
   &::before {
@@ -14,6 +16,12 @@ sc-card {
     top: 0;
     bottom: 0;
     background-color: $brand-primary;
+  }
+
+  img {
+    display: flex;
+    position: relative;
+    z-index: 1;
   }
 
   .content {
