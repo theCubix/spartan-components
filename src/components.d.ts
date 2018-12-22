@@ -15,6 +15,9 @@ export namespace Components {
   interface ScApp {}
   interface ScAppAttributes extends StencilHTMLAttributes {}
 
+  interface ScBackdrop {}
+  interface ScBackdropAttributes extends StencilHTMLAttributes {}
+
   interface ScCard {
     'heading': string;
   }
@@ -31,6 +34,14 @@ export namespace Components {
   interface ScList {}
   interface ScListAttributes extends StencilHTMLAttributes {}
 
+  interface ScNavbar {
+    'name': string;
+    'toggle': () => void;
+  }
+  interface ScNavbarAttributes extends StencilHTMLAttributes {
+    'name'?: string;
+  }
+
   interface ScSection {}
   interface ScSectionAttributes extends StencilHTMLAttributes {}
 }
@@ -38,19 +49,23 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'ScApp': Components.ScApp;
+    'ScBackdrop': Components.ScBackdrop;
     'ScCard': Components.ScCard;
     'ScContainer': Components.ScContainer;
     'ScGrid': Components.ScGrid;
     'ScList': Components.ScList;
+    'ScNavbar': Components.ScNavbar;
     'ScSection': Components.ScSection;
   }
 
   interface StencilIntrinsicElements {
     'sc-app': Components.ScAppAttributes;
+    'sc-backdrop': Components.ScBackdropAttributes;
     'sc-card': Components.ScCardAttributes;
     'sc-container': Components.ScContainerAttributes;
     'sc-grid': Components.ScGridAttributes;
     'sc-list': Components.ScListAttributes;
+    'sc-navbar': Components.ScNavbarAttributes;
     'sc-section': Components.ScSectionAttributes;
   }
 
@@ -59,6 +74,12 @@ declare global {
   var HTMLScAppElement: {
     prototype: HTMLScAppElement;
     new (): HTMLScAppElement;
+  };
+
+  interface HTMLScBackdropElement extends Components.ScBackdrop, HTMLStencilElement {}
+  var HTMLScBackdropElement: {
+    prototype: HTMLScBackdropElement;
+    new (): HTMLScBackdropElement;
   };
 
   interface HTMLScCardElement extends Components.ScCard, HTMLStencilElement {}
@@ -85,6 +106,12 @@ declare global {
     new (): HTMLScListElement;
   };
 
+  interface HTMLScNavbarElement extends Components.ScNavbar, HTMLStencilElement {}
+  var HTMLScNavbarElement: {
+    prototype: HTMLScNavbarElement;
+    new (): HTMLScNavbarElement;
+  };
+
   interface HTMLScSectionElement extends Components.ScSection, HTMLStencilElement {}
   var HTMLScSectionElement: {
     prototype: HTMLScSectionElement;
@@ -93,19 +120,23 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'sc-app': HTMLScAppElement
+    'sc-backdrop': HTMLScBackdropElement
     'sc-card': HTMLScCardElement
     'sc-container': HTMLScContainerElement
     'sc-grid': HTMLScGridElement
     'sc-list': HTMLScListElement
+    'sc-navbar': HTMLScNavbarElement
     'sc-section': HTMLScSectionElement
   }
 
   interface ElementTagNameMap {
     'sc-app': HTMLScAppElement;
+    'sc-backdrop': HTMLScBackdropElement;
     'sc-card': HTMLScCardElement;
     'sc-container': HTMLScContainerElement;
     'sc-grid': HTMLScGridElement;
     'sc-list': HTMLScListElement;
+    'sc-navbar': HTMLScNavbarElement;
     'sc-section': HTMLScSectionElement;
   }
 
