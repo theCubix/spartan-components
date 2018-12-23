@@ -1,0 +1,29 @@
+sc-tooltip {
+  display: inline;
+  position: relative;
+
+  &[data-tooltip]::after {
+    background-color: $brand-primary;
+    border-radius: 3px;
+    bottom: 100%;
+    box-shadow: $shadow-strong;
+    content: attr(data-tooltip);
+    display: block;
+    font-size: 0.8em;
+    left: 50%;
+    opacity: 0;
+    padding: 10px 30px;
+    position: absolute;
+    transform: scale(0.5) translateX(-50%);
+    transition: transform 300ms ease, opacity 300ms ease;
+    transform-origin: bottom left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+  &[data-tooltip]:hover::after,
+  &[data-tooltip]:focus::after {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+  }
+}

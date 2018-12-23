@@ -13,6 +13,7 @@ export const config: Config = {
     { components: ['sc-list'] },
     { components: ['sc-navbar'] },
     { components: ['sc-section'] },
+    { components: ['sc-tooltip'] },
     { components: ['sc-home'] },
   ],
   plugins: [

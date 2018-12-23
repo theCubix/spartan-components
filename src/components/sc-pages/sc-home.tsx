@@ -13,7 +13,7 @@ export class ScHome {
             <sc-list>
               <li>a components collection</li>
               <li>reduced to the minimum</li>
-              <li>with little <span class="underlined">sparks of colour</span></li>
+              <li>with little <sc-tooltip underlined tooltip="And helpful tools :)">sparks of colour</sc-tooltip> </li>
             </sc-list>
           </sc-container>
         </sc-section>
@@ -21,7 +21,7 @@ export class ScHome {
         <sc-container>
           <sc-grid class="two-columns">
 
-            <sc-card imageSrc="https://source.unsplash.com/random/400x200" imageAlt="another one">
+            <sc-card imageSrc="https://source.unsplash.com/random/400x231" imageAlt="another one">
               <h1 slot="title" class="title is-2">Web Components FTW.</h1>
               <p slot="content" class="text no-margin-bottom">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
