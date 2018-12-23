@@ -52,6 +52,15 @@ export namespace Components {
 
   interface ScSection {}
   interface ScSectionAttributes extends StencilHTMLAttributes {}
+
+  interface ScTooltip {
+    'tooltip': string;
+    'underlined': boolean;
+  }
+  interface ScTooltipAttributes extends StencilHTMLAttributes {
+    'tooltip'?: string;
+    'underlined'?: boolean;
+  }
 }
 
 declare global {
@@ -65,6 +74,7 @@ declare global {
     'ScNavbar': Components.ScNavbar;
     'ScHome': Components.ScHome;
     'ScSection': Components.ScSection;
+    'ScTooltip': Components.ScTooltip;
   }
 
   interface StencilIntrinsicElements {
@@ -77,6 +87,7 @@ declare global {
     'sc-navbar': Components.ScNavbarAttributes;
     'sc-home': Components.ScHomeAttributes;
     'sc-section': Components.ScSectionAttributes;
+    'sc-tooltip': Components.ScTooltipAttributes;
   }
 
 
@@ -134,6 +145,12 @@ declare global {
     new (): HTMLScSectionElement;
   };
 
+  interface HTMLScTooltipElement extends Components.ScTooltip, HTMLStencilElement {}
+  var HTMLScTooltipElement: {
+    prototype: HTMLScTooltipElement;
+    new (): HTMLScTooltipElement;
+  };
+
   interface HTMLElementTagNameMap {
     'sc-app': HTMLScAppElement
     'sc-backdrop': HTMLScBackdropElement
@@ -144,6 +161,7 @@ declare global {
     'sc-navbar': HTMLScNavbarElement
     'sc-home': HTMLScHomeElement
     'sc-section': HTMLScSectionElement
+    'sc-tooltip': HTMLScTooltipElement
   }
 
   interface ElementTagNameMap {
@@ -156,6 +174,7 @@ declare global {
     'sc-navbar': HTMLScNavbarElement;
     'sc-home': HTMLScHomeElement;
     'sc-section': HTMLScSectionElement;
+    'sc-tooltip': HTMLScTooltipElement;
   }
 
 
