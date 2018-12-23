@@ -11,7 +11,8 @@ export class ScTooltip {
   hostData() {
     return {
       'class': { 'underlined': this.underlined },
-      'data-tooltip' : this.tooltip
+      'data-tooltip' : this.tooltip,
+      'tabindex': '0'
     }
   }
 
