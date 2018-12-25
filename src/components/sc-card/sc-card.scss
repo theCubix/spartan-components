@@ -7,7 +7,7 @@ sc-card {
   overflow: hidden;
   position: relative;
 
-  &::before {
+  &.coloured::before {
     content: "";
     position: absolute;
     width: 3px;

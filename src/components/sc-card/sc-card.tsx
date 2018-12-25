@@ -8,6 +8,13 @@ export class ScCard {
   @Prop() heading: string
   @Prop() imageSrc: string
   @Prop() imageAlt: string
+  @Prop() coloured: boolean
+
+  hostData() {
+    return {
+      'class': { 'coloured': this.coloured },
+    }
+  }
 
   render() {
     return (
