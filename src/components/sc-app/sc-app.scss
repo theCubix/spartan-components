@@ -77,4 +77,8 @@ sc-app {
   .is-capitalized {
     text-transform: capitalize;
   }
+
+  .no-margin-bottom {
+    margin-bottom: 0;
+  }
 }
