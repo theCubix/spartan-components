@@ -38,6 +38,13 @@ export namespace Components {
   interface ScGrid {}
   interface ScGridAttributes extends StencilHTMLAttributes {}
 
+  interface ScIconMenu {
+    'coloured': boolean;
+  }
+  interface ScIconMenuAttributes extends StencilHTMLAttributes {
+    'coloured'?: boolean;
+  }
+
   interface ScList {}
   interface ScListAttributes extends StencilHTMLAttributes {}
 
@@ -72,6 +79,7 @@ declare global {
     'ScCard': Components.ScCard;
     'ScContainer': Components.ScContainer;
     'ScGrid': Components.ScGrid;
+    'ScIconMenu': Components.ScIconMenu;
     'ScList': Components.ScList;
     'ScNavbar': Components.ScNavbar;
     'ScHome': Components.ScHome;
@@ -85,6 +93,7 @@ declare global {
     'sc-card': Components.ScCardAttributes;
     'sc-container': Components.ScContainerAttributes;
     'sc-grid': Components.ScGridAttributes;
+    'sc-icon-menu': Components.ScIconMenuAttributes;
     'sc-list': Components.ScListAttributes;
     'sc-navbar': Components.ScNavbarAttributes;
     'sc-home': Components.ScHomeAttributes;
@@ -123,6 +132,12 @@ declare global {
     new (): HTMLScGridElement;
   };
 
+  interface HTMLScIconMenuElement extends Components.ScIconMenu, HTMLStencilElement {}
+  var HTMLScIconMenuElement: {
+    prototype: HTMLScIconMenuElement;
+    new (): HTMLScIconMenuElement;
+  };
+
   interface HTMLScListElement extends Components.ScList, HTMLStencilElement {}
   var HTMLScListElement: {
     prototype: HTMLScListElement;
@@ -159,6 +174,7 @@ declare global {
     'sc-card': HTMLScCardElement
     'sc-container': HTMLScContainerElement
     'sc-grid': HTMLScGridElement
+    'sc-icon-menu': HTMLScIconMenuElement
     'sc-list': HTMLScListElement
     'sc-navbar': HTMLScNavbarElement
     'sc-home': HTMLScHomeElement
@@ -172,6 +188,7 @@ declare global {
     'sc-card': HTMLScCardElement;
     'sc-container': HTMLScContainerElement;
     'sc-grid': HTMLScGridElement;
+    'sc-icon-menu': HTMLScIconMenuElement;
     'sc-list': HTMLScListElement;
     'sc-navbar': HTMLScNavbarElement;
     'sc-home': HTMLScHomeElement;
