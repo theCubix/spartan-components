@@ -12,7 +12,7 @@ export class ScCard {
 
   hostData() {
     return {
-      'class': { 'coloured': this.coloured },
+      'class': { 'coloured': this.coloured }
     }
   }
 
