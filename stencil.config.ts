@@ -10,6 +10,7 @@ export const config: Config = {
     { components: ['sc-card'] },
     { components: ['sc-container'] },
     { components: ['sc-grid'] },
+    { components: ['sc-icon-menu'] },
     { components: ['sc-list'] },
     { components: ['sc-navbar'] },
     { components: ['sc-section'] },
