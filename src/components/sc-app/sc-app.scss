@@ -82,3 +82,16 @@ sc-app {
     margin-bottom: 0;
   }
 }
+
+.icon {
+  fill: $icon-default-colour;
+  &.coloured {
+    fill: $icon-colour;
+    &:hover {
+      fill: $icon-hover-colour;
+    }
+  }
+  &:hover {
+    fill: $icon-default-hover-colour;
+  }
+}
