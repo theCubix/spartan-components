@@ -1,0 +1,33 @@
+sc-home {
+  .shapes {
+    background-color: white;
+
+    * {
+      z-index: 1;
+    }
+
+    &::before {
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 90vh;
+      background: url('/assets/large-circle.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+      position: absolute;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+      width: 45vh;
+      height: 45vh;
+      background: url('/assets/circles.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      content: '';
+      position: absolute;
+    }
+  }
+}
