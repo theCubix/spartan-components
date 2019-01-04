@@ -70,7 +70,7 @@ export class ScHome {
           <sc-container>
             <h2 class="title is-1">
               minimalism is not a lack of something<br/>
-              it is simply the perfect amount of something
+              it is simply the <span class="underlined">perfect amount</span> of something
             </h2>
           </sc-container>
         </sc-section>
