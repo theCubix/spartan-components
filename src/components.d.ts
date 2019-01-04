@@ -21,12 +21,14 @@ export namespace Components {
 
   interface ScCard {
     'coloured': boolean;
+    'colouredAccent': boolean;
     'heading': string;
     'imageAlt': string;
     'imageSrc': string;
   }
   interface ScCardAttributes extends StencilHTMLAttributes {
     'coloured'?: boolean;
+    'colouredAccent'?: boolean;
     'heading'?: string;
     'imageAlt'?: string;
     'imageSrc'?: string;
