@@ -21,6 +21,10 @@ sc-app {
     padding-bottom: 3em;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   .text{
     color: $gray-dark;
     font-size: 1em;
