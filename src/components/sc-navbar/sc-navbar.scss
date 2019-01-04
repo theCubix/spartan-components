@@ -2,6 +2,7 @@ sc-navbar {
   z-index: 777;
   background-color: rgba($foreground, 0.98);
   box-shadow: $shadow;
+
   header {
     box-sizing: border-box;
     display: flex;
@@ -28,6 +29,7 @@ sc-navbar {
   }
 
   .list {
+
     ul {
       display: flex;
       list-style: none;
@@ -55,14 +57,15 @@ sc-navbar {
   }
 
   &.is-fixed {
-    position: fixed;
     top: 0;
+
+    position: fixed;
     width: 100%;
   }
 
   @supports (backdrop-filter: blur()) {
-    backdrop-filter: blur(15px);
     background-color: rgba($foreground, 0.85);
+    backdrop-filter: blur(15px);
   }
 }
 
@@ -101,11 +104,29 @@ sc-navbar {
         text-align: left;
 
         li {
+          &::after {
+            content: '';
+            width: 70vh;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.05);
+            display: block;
+            margin: 5px 30px;
+
+          }
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+
           a {
             box-sizing: border-box;
             display: block;
+            font-weight: 500;
+            letter-spacing: 1px;
             margin: 0;
             padding: 10px 30px !important;
+            text-transform: uppercase;
           }
         }
       }
