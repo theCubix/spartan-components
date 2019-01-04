@@ -17,6 +17,11 @@ sc-app {
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+    color: $gray-darkest;
+  }
+
   main {
     padding-bottom: 3em;
   }
