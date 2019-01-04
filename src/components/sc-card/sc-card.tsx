@@ -9,10 +9,14 @@ export class ScCard {
   @Prop() imageSrc: string
   @Prop() imageAlt: string
   @Prop() coloured: boolean
+  @Prop() colouredAccent: boolean
 
   hostData() {
     return {
-      'class': { 'coloured': this.coloured }
+      'class': { 
+        'coloured': this.colouredAccent,
+        'coloured-background' : this.coloured
+      }
     }
   }
 
