@@ -61,8 +61,16 @@ export namespace Components {
   interface ScHome {}
   interface ScHomeAttributes extends StencilHTMLAttributes {}
 
-  interface ScSection {}
-  interface ScSectionAttributes extends StencilHTMLAttributes {}
+  interface ScSection {
+    'hasCentered': boolean;
+    'hasNomargin': boolean;
+    'isFullheight': boolean;
+  }
+  interface ScSectionAttributes extends StencilHTMLAttributes {
+    'hasCentered'?: boolean;
+    'hasNomargin'?: boolean;
+    'isFullheight'?: boolean;
+  }
 
   interface ScTooltip {
     'tooltip': string;
