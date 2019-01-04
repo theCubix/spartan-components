@@ -1,6 +1,6 @@
 sc-navbar {
   z-index: 777;
-  background-color: $foreground;
+  background-color: rgba($foreground, 0.98);
   box-shadow: $shadow;
   header {
     box-sizing: border-box;
