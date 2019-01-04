@@ -31,6 +31,10 @@ export class ScHome {
               <h3 slot="title" class="title is-3 underlined">Dead awesome</h3>
               <p slot="content" class="text no-margin-bottom">Absodudely. Lorem ipsum or so. </p>
             </sc-card>
+            <sc-card>
+              <h3 slot="title" class="title is-3 underlined">Dead awesome</h3>
+              <p slot="content" class="text no-margin-bottom">Absodudely. Lorem ipsum or so. </p>
+            </sc-card>
           </sc-grid>
     
         </sc-container>
@@ -38,11 +42,11 @@ export class ScHome {
         <sc-container>
           <h2 class="title is-2 has-margin-large">Coloured Card</h2>
           <sc-grid class="two-columns">
-            <sc-card coloured>
+            <sc-card colouredAccent>
               <h3 slot="title">Notice the colour on the side?</h3>
               <p slot="content" class="text no-margin-bottom">See? Quite a nice touch, isn't it?</p>
             </sc-card>
-            <sc-card coloured imageSrc="//source.unsplash.com/400x250" imageAlt="A random image from the web">
+            <sc-card colouredAccent imageSrc="//source.unsplash.com/400x250" imageAlt="A random image from the web">
               <h3 slot="title">Even works with images.</h3>
               <p slot="content" class="text no-margin-bottom">Cool cool cool.</p>
             </sc-card>
