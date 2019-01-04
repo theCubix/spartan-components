@@ -5,7 +5,7 @@ sc-grid {
   margin: -1em;
 
   > * {
-    flex-basis: 20rem;
+    flex-basis: 17rem;
     flex-grow: 1;
     margin: 1em;
   }
@@ -14,7 +14,7 @@ sc-grid {
     margin: 0;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     grid-gap: 2em;
     > * {
       margin: 0;
@@ -22,14 +22,3 @@ sc-grid {
     }
   }
 }
-
-// @include for-mobile() {
-//   sc-grid {
-
-//     &.two-columns,
-//     &.three-columns,
-//     &.four-columns {
-//       grid-template-columns: 1fr;
-//     }
-//   }
-// }
