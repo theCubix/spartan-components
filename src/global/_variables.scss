@@ -3,7 +3,7 @@ $brand-primary: #F6FB10;
 $brand-faded: rgba($brand-primary, 0.5);
 $brand-darken: darken($brand-primary, 10);
 
-$brand-secondary: #5613ad;
+$brand-secondary: #07A4EF;
 
 $black: #101010;
 $white: #ffffff;
@@ -27,8 +27,8 @@ $icon-default-colour: #212121;
 $icon-default-hover-colour: #424242;
 
 //effects
-$shadow: 0px 20px 30px rgba($brand-secondary, 0.01), 0px 3px 4px rgba($brand-secondary, 0.01);
-$shadow-strong: 0px 20px 30px rgba($brand-secondary, 0.07), 0px 3px 4px rgba($brand-secondary, 0.04);
+$shadow: 0px 20px 25px rgba($brand-secondary, 0.03), 0px 3px 4px rgba($brand-secondary, 0.01);
+$shadow-strong: 0px 20px 25px rgba($brand-secondary, 0.05), 0px 3px 4px rgba($brand-secondary, 0.04);
 
 //typography
 $font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
