@@ -28,7 +28,8 @@ export class ScNavbar {
     return(
       <header>
         <h1 class="title">{this.name}</h1>
-        <img class="menu-icon" src="assets/icon-menu.svg" onClick={() => this.toggle()} />
+        <sc-icon-menu class="menu-icon" onClick={() => this.toggle()} />
+        {/* <img class="menu-icon" src="assets/icon-menu.svg" onClick={() => this.toggle()} /> */}
         <div class="list">
           <img class="close-icon" src="assets/icon-x.svg" onClick={() => this.toggle()} />
           <slot />
