@@ -14,9 +14,9 @@ export class ScHome {
             <sc-list>
               <li>a components collection</li>
               <li>reduced to the minimum</li>
-              <li>with little <sc-tooltip underlined tooltip="And helpful tools :)">sparks of colour</sc-tooltip> </li>
+              <li>with little <sc-tooltip underlined tooltip="and helpful tools">sparks of colour</sc-tooltip> </li>
             </sc-list>
-            <a class="underlined cta" href="#helloworld">get to know more</a>
+            {/* <a class="underlined cta" href="#helloworld">get to know more</a> */}
           </sc-container>
         </sc-section>
 
@@ -25,13 +25,13 @@ export class ScHome {
             <h2 class="title is-2 has-margin-large">dead simple cards</h2>
             <sc-grid class="two-columns">
               <sc-card>
-                <h3 slot="title" class="title is-3 underlined">your dead simple card title</h3>
+                <h3 slot="title" class="title is-3">your dead simple card title</h3>
                 <p slot="content" class="text no-margin-bottom">
                   lorem ipsum dolor, sit amet consectetur adipisicing elit
                 </p>
               </sc-card>
               <sc-card>
-                <h3 slot="title" class="title is-3 underlined">dead awesome</h3>
+                <h3 slot="title" class="title is-3">dead awesome</h3>
                 <p slot="content" class="text no-margin-bottom">absodudely. lorem ipsum or so</p>
               </sc-card>
               <sc-card>
