@@ -11,9 +11,9 @@ export class ScApp {
       <div>
         <sc-navbar class="is-fixed" name="Spartan Components">
           <ul>
-            <li><a href="/#/"><sc-icon-home size={15} />Home</a></li>
-            <li><a href="/#/components/"><sc-icon-code  size={15} />Components</a></li>
-            <li><a href="/#/about/"><sc-icon-info size={15} />About</a></li>
+            <li><a href="/#/"><sc-icon-home coloured size={15} />Home</a></li>
+            <li><a href="/#/components/"><sc-icon-code coloured size={15} />Components</a></li>
+            <li><a href="/#/about/"><sc-icon-info coloured size={15} />About</a></li>
           </ul>
         </sc-navbar>
 
