@@ -40,6 +40,33 @@ export namespace Components {
   interface ScGrid {}
   interface ScGridAttributes extends StencilHTMLAttributes {}
 
+  interface ScIconCode {
+    'coloured': boolean;
+    'size': number;
+  }
+  interface ScIconCodeAttributes extends StencilHTMLAttributes {
+    'coloured'?: boolean;
+    'size'?: number;
+  }
+
+  interface ScIconHome {
+    'coloured': boolean;
+    'size': number;
+  }
+  interface ScIconHomeAttributes extends StencilHTMLAttributes {
+    'coloured'?: boolean;
+    'size'?: number;
+  }
+
+  interface ScIconInfo {
+    'coloured': boolean;
+    'size': number;
+  }
+  interface ScIconInfoAttributes extends StencilHTMLAttributes {
+    'coloured'?: boolean;
+    'size'?: number;
+  }
+
   interface ScIconMenu {
     'coloured': boolean;
   }
@@ -60,6 +87,13 @@ export namespace Components {
 
   interface ScHome {}
   interface ScHomeAttributes extends StencilHTMLAttributes {}
+
+  interface ScPill {
+    'colour': string;
+  }
+  interface ScPillAttributes extends StencilHTMLAttributes {
+    'colour'?: string;
+  }
 
   interface ScSection {
     'hasCentered': boolean;
@@ -89,10 +123,14 @@ declare global {
     'ScCard': Components.ScCard;
     'ScContainer': Components.ScContainer;
     'ScGrid': Components.ScGrid;
+    'ScIconCode': Components.ScIconCode;
+    'ScIconHome': Components.ScIconHome;
+    'ScIconInfo': Components.ScIconInfo;
     'ScIconMenu': Components.ScIconMenu;
     'ScList': Components.ScList;
     'ScNavbar': Components.ScNavbar;
     'ScHome': Components.ScHome;
+    'ScPill': Components.ScPill;
     'ScSection': Components.ScSection;
     'ScTooltip': Components.ScTooltip;
   }
@@ -103,10 +141,14 @@ declare global {
     'sc-card': Components.ScCardAttributes;
     'sc-container': Components.ScContainerAttributes;
     'sc-grid': Components.ScGridAttributes;
+    'sc-icon-code': Components.ScIconCodeAttributes;
+    'sc-icon-home': Components.ScIconHomeAttributes;
+    'sc-icon-info': Components.ScIconInfoAttributes;
     'sc-icon-menu': Components.ScIconMenuAttributes;
     'sc-list': Components.ScListAttributes;
     'sc-navbar': Components.ScNavbarAttributes;
     'sc-home': Components.ScHomeAttributes;
+    'sc-pill': Components.ScPillAttributes;
     'sc-section': Components.ScSectionAttributes;
     'sc-tooltip': Components.ScTooltipAttributes;
   }
@@ -142,6 +184,24 @@ declare global {
     new (): HTMLScGridElement;
   };
 
+  interface HTMLScIconCodeElement extends Components.ScIconCode, HTMLStencilElement {}
+  var HTMLScIconCodeElement: {
+    prototype: HTMLScIconCodeElement;
+    new (): HTMLScIconCodeElement;
+  };
+
+  interface HTMLScIconHomeElement extends Components.ScIconHome, HTMLStencilElement {}
+  var HTMLScIconHomeElement: {
+    prototype: HTMLScIconHomeElement;
+    new (): HTMLScIconHomeElement;
+  };
+
+  interface HTMLScIconInfoElement extends Components.ScIconInfo, HTMLStencilElement {}
+  var HTMLScIconInfoElement: {
+    prototype: HTMLScIconInfoElement;
+    new (): HTMLScIconInfoElement;
+  };
+
   interface HTMLScIconMenuElement extends Components.ScIconMenu, HTMLStencilElement {}
   var HTMLScIconMenuElement: {
     prototype: HTMLScIconMenuElement;
@@ -166,6 +226,12 @@ declare global {
     new (): HTMLScHomeElement;
   };
 
+  interface HTMLScPillElement extends Components.ScPill, HTMLStencilElement {}
+  var HTMLScPillElement: {
+    prototype: HTMLScPillElement;
+    new (): HTMLScPillElement;
+  };
+
   interface HTMLScSectionElement extends Components.ScSection, HTMLStencilElement {}
   var HTMLScSectionElement: {
     prototype: HTMLScSectionElement;
@@ -184,10 +250,14 @@ declare global {
     'sc-card': HTMLScCardElement
     'sc-container': HTMLScContainerElement
     'sc-grid': HTMLScGridElement
+    'sc-icon-code': HTMLScIconCodeElement
+    'sc-icon-home': HTMLScIconHomeElement
+    'sc-icon-info': HTMLScIconInfoElement
     'sc-icon-menu': HTMLScIconMenuElement
     'sc-list': HTMLScListElement
     'sc-navbar': HTMLScNavbarElement
     'sc-home': HTMLScHomeElement
+    'sc-pill': HTMLScPillElement
     'sc-section': HTMLScSectionElement
     'sc-tooltip': HTMLScTooltipElement
   }
@@ -198,10 +268,14 @@ declare global {
     'sc-card': HTMLScCardElement;
     'sc-container': HTMLScContainerElement;
     'sc-grid': HTMLScGridElement;
+    'sc-icon-code': HTMLScIconCodeElement;
+    'sc-icon-home': HTMLScIconHomeElement;
+    'sc-icon-info': HTMLScIconInfoElement;
     'sc-icon-menu': HTMLScIconMenuElement;
     'sc-list': HTMLScListElement;
     'sc-navbar': HTMLScNavbarElement;
     'sc-home': HTMLScHomeElement;
+    'sc-pill': HTMLScPillElement;
     'sc-section': HTMLScSectionElement;
     'sc-tooltip': HTMLScTooltipElement;
   }
