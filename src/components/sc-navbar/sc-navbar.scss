@@ -30,6 +30,10 @@ sc-navbar {
 
   .list {
 
+    .icon {
+      display: none;
+    }
+
     ul {
       display: flex;
       list-style: none;
@@ -98,12 +102,20 @@ sc-navbar {
       transition: right 300ms ease;
       width: 250px;
       z-index: 10000;
+
+      .icon {
+        bottom: -1px;
+        display: inline-block;
+        margin-right: 10px;
+        opacity: 0.9;
+        position: relative;
+      }
       
       ul {
         display: block;
         text-align: left;
 
-        li {
+        > li {
           &::after {
             content: '';
             width: 70vh;
@@ -133,3 +145,4 @@ sc-navbar {
     }
   }
 }
+
